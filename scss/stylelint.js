@@ -1,5 +1,5 @@
 module.exports = {
-  extends: 'stylelint-config-sass-guidelines',
+  extends: ['stylelint-config-standard-scss'],
   plugins: ['stylelint-selector-bem-pattern'],
   rules: {
     'selector-class-pattern':
@@ -12,6 +12,7 @@ module.exports = {
       },
       utilitySelectors: '^\\.util-[a-z]+$',
     },
+
     'max-nesting-depth': 2,
     'selector-max-compound-selectors': 4,
   },
